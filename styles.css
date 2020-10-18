@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -25,18 +29,27 @@
   filter: invert(97.5%);
 }
 
+.banner-image {
+    padding-top: 65px;
+}
+
 .page {
-  padding-top: 80px;
   padding-left: 20px;
   padding-right: 20px;
   min-height: calc(100vh - 5vh); /*The second term is the height of the footer. The min-height makes it so every page fills up the page. Even if the page is blank.*/
   font-family: "Times New Roman";
-  background-color: #F7F7F7;
+  background-color: #fff5db;
   text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
 }
 
 #selector {
   background-color: #FFFFFF;
+  border-radius: 5px;
 }
 
 p {
@@ -46,12 +59,22 @@ p {
 #submit {
   padding-left: 5px;
   padding-right: 5px;
-  background-color: #3c8696;
+  background-color: #603c96;
   color: #FFFFFF;
+  border-radius: 5px;
+}
+
+h1 {
+font-size: 60px;
+}
+
+h1, h2 {
+  font-family: 'Tangerine', cursive;
 }
 
 h2 {
   text-align: center;
+  font-size: 40px;
 }
 
 .people, .spells {
@@ -76,7 +99,7 @@ h2 {
   width: 100%;
   text-align: center;
   color: #FFFFFF;
-  background-color: #3c8696;
+  background-color: #603c96;
   border: 2px solid black;
   border-bottom: 0px;
   border-top-left-radius: 6px;
@@ -100,6 +123,13 @@ h2 {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 1vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.credit {
+  font-size: 8px;
 }
 
 .footer-link, .footer-link:hover {
